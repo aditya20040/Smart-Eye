@@ -1,0 +1,20 @@
+# AttendMood – requirements
+# ──────────────────────────────────────────────────────────────
+# Core (always required)
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Face recognition (attendance)
+# Requires cmake & dlib — see README for platform-specific notes
+face-recognition>=1.3.0
+
+# Emotion detection (sentiment analysis)
+tensorflow>=2.13.0        # or tensorflow-cpu for CPU-only machines
+kagglehub>=0.2.0          # only needed for --mode train
+
+# MoodMate voice assistant
+pyttsx3>=2.90             # TTS (works offline)
+openai>=1.0.0             # optional: set OPENAI_API_KEY for AI responses
+
+# Utility
+pillow>=10.0.0
